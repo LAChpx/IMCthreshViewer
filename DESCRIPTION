@@ -1,0 +1,31 @@
+Package: IMCthreshViewer
+Title: Visualization of cell positivity thresholds in IMC
+Version: 0.0.0.9000
+Authors@R: 
+    c(person("Laure-Agnes", "Chepeaux", , "laure-agnes.chepeaux@inserm.fr", role = c("aut", "cre")),
+      person("Henri-Alexandre", "Michaud", role = "ctb"))
+Description: Package to visualize the tiffs obtained in IMC but also to establish positivity thresholds for marker(s) intensities from the fcs obtained post-segmentation.
+License: GPL-3
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
+Imports: 
+    Biobase (>= 2.54.0),
+    Biostrings (>= 2.62.0),
+    colourpicker (>= 1.1.1),
+    dplyr (>= 1.1.1),
+    EBImage (>= 4.36.0),
+    flowCore (>= 2.6.0),
+    flowDensity (>= 1.28.0),
+    graphics (>= 4.1.2),
+    grDevices (>= 4.1.2),
+    magrittr,
+    methods (>= 4.1.2),
+    shiny (>= 1.7.1),
+    shinydashboard (>= 0.7.2),
+    shinyjs (>= 2.1.0),
+    stats (>= 4.1.2)
