@@ -7,6 +7,8 @@ Authors@R:
     person("Plateforme CIM, Institut du Cancer de Montpellier - IRCM", role = c("cph", "fnd")))
 Description: Package to visualize the tiffs obtained in IMC but also to establish marker positivity thresholds from fcs obtained in post-segmentation.
 License: GPL-3
+Depends:
+    R (>= 4.1)
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.3
@@ -30,3 +32,6 @@ Imports:
     shinydashboard (>= 0.7.2),
     shinyjs (>= 2.1.0),
     stats (>= 4.1.2)
+biocViews: Biobase, Biostrings, EBImage, flowCore, flowDensity
+URL: https://github.com/LAChpx/IMCthreshViewer
+BugReports: https://github.com/LAChpx/IMCthreshViewer/issues
