@@ -4,7 +4,7 @@ Version: 0.0.0.9000
 Authors@R: 
     c(person("Laure-Agnes", "Chepeaux", , "laure-agnes.chepeaux@inserm.fr", role = c("aut", "cre")),
       person("Henri-Alexandre", "Michaud", role = "ctb"))
-Description: Package to visualize the tiffs obtained in IMC but also to establish positivity thresholds for marker(s) intensities from the fcs obtained post-segmentation.
+Description: Package to visualize the tiffs obtained in IMC but also to establish marker positivity thresholds from fcs obtained in post-segmentation.
 License: GPL-3
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
