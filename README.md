@@ -1,11 +1,10 @@
----
-title: "IMCthreshViewer"
-output: rmarkdown::html_vignette
-vignette: >
-  %\VignetteIndexEntry{IMCthreshViewer}
-  %\VignetteEngine{knitr::rmarkdown}
-  %\VignetteEncoding{UTF-8}
----
+IMCthreshViewer
+===============
+
+### IMCthreshViewer
+
+Package to visualize the tiffs obtained in IMC but also to establish marker positivity thresholds from fcs obtained in post-segmentation.
+
 
 ### Installation
 
