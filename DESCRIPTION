@@ -3,7 +3,8 @@ Title: Visualization of cell positivity thresholds in IMC
 Version: 0.0.0.9000
 Authors@R: 
     c(person("Laure-Agnes", "Chepeaux", , "laure-agnes.chepeaux@inserm.fr", role = c("aut", "cre")),
-      person("Henri-Alexandre", "Michaud", role = "ctb"))
+      person("Henri-Alexandre", "Michaud", role = "ctb"),
+    person("Plateforme CIM, Institut du Cancer de Montpellier - IRCM", role = c("cph", "fnd")))
 Description: Package to visualize the tiffs obtained in IMC but also to establish marker positivity thresholds from fcs obtained in post-segmentation.
 License: GPL-3
 Encoding: UTF-8
