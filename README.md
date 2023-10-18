@@ -32,5 +32,5 @@ shiny_IMCthreshViewer()
 
 ### Help
 
-<img src="vignettes/ImageAcc1.png" align="center" alt="" width="100" />
-<img src="vignettes/ImageAcc2.png" align="center" alt="" width="100" />
+<img src="vignettes/ImageAcc1.png" align="center" alt="" />
+<img src="vignettes/ImageAcc2.png" align="center" alt="" />
