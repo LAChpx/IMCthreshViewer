@@ -87,11 +87,7 @@
 
 
 
-#' @importFrom flowDensity plotDens
 #' @importFrom Biostrings pairwiseAlignment
-#' @importFrom graphics abline
-
-
 
 
 .plotdot <- function(data_ff, chans, thresh, tiffname_sans_mask, actual_mark_fcs, markers){
@@ -111,14 +107,28 @@
   if(marktoplot == "PASDADN"){
     return("")
   }else{
-    flowDensity::plotDens(data_ff, channels = c(chans[[1]], marktoplot))
-    abline(v = thresh, col = "red", lty = 2, lwd = 3)
-    .gettext(datff = data_ff, channels = c(chans[[1]], marktoplot), thresh = thresh)
+    .baseplotdens(ff = data_ff, canaux = c(chans[[1]], marktoplot), fcsthresh = thresh)
   }
 
 }
 
 
+
+#' @importFrom grDevices densCols
+#' @importFrom grDevices adjustcolor
+#' @importFrom grDevices colorRampPalette
+#' @importFrom graphics plot
+#' @importFrom graphics abline
+
+.baseplotdens <- function(ff, canaux, fcsthresh){
+  df <- as.data.frame(ff@exprs)
+  colPalette <- colorRampPalette(colors = c("blue", "turquoise", "green", "yellow", "orange", "red"))
+  col <- suppressWarnings(grDevices::densCols(df[,canaux], colramp = colPalette))
+  col <- grDevices::adjustcolor(col)
+  graphics::plot(df[,canaux], col = col, pch = 19)
+  abline(v = fcsthresh, col = "red", lty = 2, lwd = 3)
+  .gettext(datff = ff, channels = canaux, thresh = fcsthresh)
+}
 
 
 
