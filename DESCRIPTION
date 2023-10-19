@@ -1,6 +1,6 @@
 Package: IMCthreshViewer
 Title: Visualization of cell positivity thresholds in IMC
-Version: 0.0.0.9000
+Version: 0.0.1
 Authors@R: 
     c(person("Laure-Agnes", "Chepeaux", , "laure-agnes.chepeaux@inserm.fr", role = c("aut", "cre")),
       person("Henri-Alexandre", "Michaud", role = "ctb"),
@@ -23,7 +23,6 @@ Imports:
     dplyr (>= 1.1.1),
     EBImage (>= 4.36.0),
     flowCore (>= 2.6.0),
-    flowDensity (>= 1.28.0),
     graphics (>= 4.1.2),
     grDevices (>= 4.1.2),
     magrittr,
@@ -32,6 +31,6 @@ Imports:
     shinydashboard (>= 0.7.2),
     shinyjs (>= 2.1.0),
     stats (>= 4.1.2)
-biocViews: Biobase, Biostrings, EBImage, flowCore, flowDensity
+biocViews: Biobase, Biostrings, EBImage, flowCore
 URL: https://github.com/LAChpx/IMCthreshViewer
 BugReports: https://github.com/LAChpx/IMCthreshViewer/issues
