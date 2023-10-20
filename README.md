@@ -1,3 +1,6 @@
+
+<img src="vignettes/LogoCIM.png" align="right" alt="" width="150" />
+
 IMCthreshViewer
 ===============
 
